@@ -50,8 +50,8 @@ Hi!!
 
 		<section>
 			<section>
-				<h2>This is not a rant</h2>
-				<h2 class="fragment">This is so that we can all play together nicely</h2>
+				<h2>This is not a rant.</h2>
+				<h2 class="fragment">This is so that we can all<br /> play together nicely.</h2>
 			</section>
 
 			<section>
@@ -72,7 +72,7 @@ Hi!!
 			<section>
 				<img src="img/photoshop-missing-fonts.png" />
 
-				<h2 class="fragment">Ahh... The dreaded "Missing Fonts" window</h2>
+				<h2>Ahh... The dreaded "Missing Fonts" window</h2>
 			</section>
 
 			<section>
@@ -80,23 +80,23 @@ Hi!!
 				<ul>
 					<li class="fragment">Make a list</li>
 					<li class="fragment">Prepare a font-stack</li>
-					<li class="fragment">Add the fonts to a <code>/ressources/</code> folder</li>
+					<li class="fragment">Add the fonts to a <code>/resources/</code> folder</li>
 				</ul>
 			</section>
 
 			<section>
-				<h1>Two quick tricks for finding fonts:</h1>
+				<h1>Two quick tricks<br /> for finding fonts:</h1>
 
-				<div class="split-2">
-					<div class="fragment center-text">
-						<h3>Missing fonts</h3>
-						Look near the end of the Fonts drop-down
-					</div>
-					<div class="fragment center-text">
-						<h3>Listing fonts</h3>
-						Export the file to PDF and look in Acrobat
-					</div>
-				</div>
+				<!--<div class="split-2">-->
+				<!--<div class="fragment center-text">-->
+				<!--<h3>Missing fonts</h3>-->
+				<!--Look near the end of the Fonts drop-down-->
+				<!--</div>-->
+				<!--<div class="fragment center-text">-->
+				<!--<h3>Listing fonts</h3>-->
+				<!--Export the file to PDF and look in Acrobat-->
+				<!--</div>-->
+				<!--</div>-->
 			</section>
 
 			<section>
@@ -130,13 +130,15 @@ Hi!!
 
 			</section>
 			<section>
-				<h3>Don't make us go digging with the Text tool</h3>
+				<h3>Don't make us go digging with the Type tool</h3>
 				<img src="img/multiple-fonts-per-layer.png" alt="">
 			</section>
 
 			<section>
-				<h3>If the font-family, font-weight or leading values are [unknown], we're going to have a problem</h3>
-				<img src="img/character-panel-empty-values.png" alt="">
+				<div class="split-2 vertical-centered">
+					<h3>If the font-family, font-weight or leading values are [unknown], we're going to have a problem.</h3>
+					<img src="img/character-panel-empty-values.png" alt="">
+				</div>
 			</section>
 
 			<section>
@@ -152,18 +154,55 @@ Hi!!
 			</section>
 
 			<section>
-				There is a multitude of screens and configurations out there.
-				There is <strong>no</strong> specific size.
-				Unlike print, we can't know the canvas ahead of time.
+				<h2>The web isn't a fixed size medium.</h2>
+				<h2>Unlike print, we can't know the canvas size ahead of time.</h2>
 
-				Stay loose <span class="fragment">as a goose</span>
+				<h2>You're going to have to stay loose</h2>
 			</section>
+
 
 			<section>
-				What happens to the header?
-				Do we go all 2003 and add a gradient mask at both ends and make it fade into the background?
-				Do we crop it?
-			</section>
+
+			<div class="header-demo">
+				<div class="browser-chrome">
+					<input class="address-bar" type="url" value="https://ourswuperawesomesite.com" />
+
+					<div class="buttons">
+						<button type="button"></button>
+						<button type="button"></button>
+						<button type="button"></button>
+					</div>
+				</div>
+				<div class="header-image-container">
+					<div class="header-image-fader"></div>
+				</div>
+				<h1 class="header-title">Headers are awesome!</h1>
+				<ul class="header-menu">
+					<li>All of our headers</li>
+					<li>Need more headers?</li>
+					<li>Contact us about our headers</li>
+				</ul>
+			</div>
+			<!-- classes for .header-demo are .wider .side-fade .stretched -->
+
+				<br class="fragment step-2" data-run="header-demo-step-2" />
+				<br class="fragment step-3" data-run="header-demo-step-3" />
+				<br class="fragment step-4" data-run="header-demo-step-4" />
+
+			<h2 class="header-demo-titles">
+				<span class="step-1">Yay! A nice header.</span>
+				<span class="step-2">What if the screen changes?</span>
+				<span class="step-3">Should we just leave it as it is?</span>
+				<span class="step-4">Should we go retro and add an alpha mask to fade it into the background?</span>
+			</h2>
+
+		</section>
+
+		<section>
+			What happens to the header?
+			Do we go all 2003 and add a gradient mask at both ends and make it fade into the background?
+			Do we crop it?
+		</section>
 		</section>
 
 

@@ -138,11 +138,6 @@ ISO = {
 
 			console.log( event.currentSlide );
 
-			if ( $( event.currentSlide ).attr( 'data-run' ) == 'ISO.full-video-the-loop' ) {
-				ISO.fullVideo.init();
-			} else {
-				ISO.fullVideo.destroy();
-			}
 		} );
 
 
@@ -150,6 +145,27 @@ ISO = {
 			// event.fragment = the fragment DOM element
 			var dataRun = $( event.fragment ).attr( 'data-run' );
 			console.log( event, dataRun );
+
+
+			// HEADER DEMO
+			var $header = $( '.header-demo' ),
+				$section = $header.parent('section');
+
+			if ( dataRun == 'header-demo-step-2' ) {
+				$section.removeClass('step-1 step-3 step-4').addClass('step-2');
+				$header.addClass( 'wider' );
+
+			} else if ( dataRun == 'header-demo-step-3' ) {
+				$section.removeClass('step-1 step-2 step-4').addClass('step-3');
+				$header.addClass( 'fade-sides' );
+			}
+			else if ( dataRun == 'header-demo-step-4' ) {
+				$section.removeClass('step-1 step-2 step-3').addClass('step-4');
+				$header.removeClass( 'fade-sides' ).addClass( 'stretched' );
+			} else {
+				$section.removeClass('step-2 step-3 step-4').addClass('step-1');
+				$header.removeClass( 'wider fade-sides stretched' );
+			}
 		} );
 
 		Reveal.addEventListener( 'fragmenthidden', function ( event ) {
