@@ -1,3 +1,48 @@
 @import "../../js/reveal.js/css/reveal.scss";
-@import "reveal-theme/settings";
-@import "reveal-theme/theme";
+//@import "reveal-theme/settings";
+//@import "reveal-theme/theme";
+@import "../../js/reveal.js/css/theme/source/white";
+// Highlight JS theme demos: https://highlightjs.org/static/demo/
+@import "highlight-js/github-gist";
+
+$landscape-breakpoint: 769px;
+
+.reveal {
+
+  .intro {
+	h1 {
+	  font-size: 6em;
+	}
+  }
+
+  .fragment {
+	.strike-through {
+	  text-decoration: line-through;
+	}
+
+	&.current-fragment {
+	  .strike-through {
+		text-decoration: none;
+	  }
+	}
+  }
+
+  .split-2 {
+
+	@media (min-width: $landscape-breakpoint) {
+
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-around;
+
+	  > * {
+		width: 50%;
+	  }
+	}
+  }
+
+  .center-text {
+	text-align: center;
+  }
+
+}

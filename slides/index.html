@@ -1,8 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+	<!--
+oy:                                                            :yo
+sNNNs:                                                      :sNNNs
+sNNNNNms:                                                :smNNNNNs
+sNNNNNNNNms-                                          -smNNNNNNNNs
+sNNNNNNNNNNNmo-                                    -omNNNNNNNNNNNs
+sNNNNNNNNNNNNNNdo.                              .odNNNNNNNNNNNNNNs
+sNNNNNNNNNNNNNNNNNd+.                        .+dNNNNNNNNNNNNNNNNNs
+sNNNNNNNNNNNNNNNNNNNNd+.                  .+dNNNNNNNNNNNNNNNNNNNNs
+sNNNNNNNNNNNNNNNNNNNNNNNh+`            `+hNNNNNNNNNNNNNNNNNNNNNNNs
+sNNNNNNNNNNNNNNNNNNNNNNNNNNh/`      `/hNNNNNNNNNNNNNNNNNNNNNNNNNNs
+sNNNNNNNNNNNNNNNNNNNNNNNNNNNNNy/``/yNNNNNNNNNNNNNNNNNNNNNNNNNNNNNs
+sNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNs
+sNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNs
+sNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNs
+sNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNs
+sNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNs
+sNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNs
++NNNNNN-...................yNNNNNNNNNNy...................-NNNNNN+
+-NNNNNN+                   mNNNNNNNNNNm`                  +NNNNNN-
+hNNNNNN:                 yNNNNNNNNNNNNy                 :NNNNNNh
+`mNNNNNNs`             :dNNNNNNmmNNNNNNd:             `oNNNNNNm`
+ `hNNNNNNNy/`       -+dNNNNNNNd`.dNNNNNNNd+-       `/yNNNNNNNh`
+   +mNNNNNNNNNdhhddNNNNNNNNNN+    +NNNNNNNNNNmdhhdNNNNNNNNNm+
+	`+dNNNNNNNNNNNNNNNNNNNd+`      `+dNNNNNNNNNNNNNNNNNNNd+`
+	   .+ymNNNNNNNNNNNmh+.            .+hmNNNNNNNNNNNmy+.
+		   `-:/+++/:-`                    `-:/+++/:-`
+
+
+Hi!!
+	-->
+
 	<meta charset="UTF-8">
 	<title>The Chop-up Diaries</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900,700,400italic,700italic,900italic|Ubuntu:400,500,700,400italic,700italic,500italic' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="css/wcott2016.css" />
 </head>
@@ -13,11 +47,201 @@
 		<section class="intro">
 			<h1>The Chop-up Diaries</h1>
 		</section>
+
+		<section>
+			<section>
+				<h2>This is not a rant</h2>
+				<h2 class="fragment">This is so that we can all play together nicely</h2>
+			</section>
+
+			<section>
+				<h1>We won't cover:</h1>
+				<ul>
+					<li class="fragment"><h2 class="strike-through">Designing inside the browser</h2></li>
+					<li class="fragment"><h2 class="strike-through">Sketch</h2></li>
+					<li class="fragment"><h2 class="strike-through">Advanced libraries like the Adobe Library</h2></li>
+				</ul>
+			</section>
+		</section>
+
+
+		<section>
+			<section>
+				<h1>What the font?</h1>
+			</section>
+			<section>
+				<img src="img/photoshop-missing-fonts.png" />
+
+				<h2 class="fragment">Ahh... The dreaded "Missing Fonts" window</h2>
+			</section>
+
+			<section>
+				<h1>How to play nice when it comes to fonts</h1>
+				<ul>
+					<li class="fragment">Make a list</li>
+					<li class="fragment">Prepare a font-stack</li>
+					<li class="fragment">Add the fonts to a <code>/ressources/</code> folder</li>
+				</ul>
+			</section>
+
+			<section>
+				<h1>Two quick tricks for finding fonts:</h1>
+
+				<div class="split-2">
+					<div class="fragment center-text">
+						<h3>Missing fonts</h3>
+						Look near the end of the Fonts drop-down
+					</div>
+					<div class="fragment center-text">
+						<h3>Listing fonts</h3>
+						Export the file to PDF and look in Acrobat
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Tip: Missing fonts</h2>
+				<div class="split-2">
+					<ul>
+						<li>Open up the Character Palette and scroll to the end of the font list.</li>
+						<li>All the missing fonts will appear with square brackets around their names.</li>
+					</ul>
+					<div><img src="img/photoshop-missing-fonts-list.png" /></div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Tip: Gathering fonts</h2>
+				<div class="split-2">
+					<ul>
+						<li>Save the file as a PDF<br />(Save As... -> "Photoshop PDF")</li>
+						<li>Open the PDF in Acrobat</li>
+						<li>Open the properties dialog<br />(File -> Properties)</li>
+						<li>Activate the "Fonts" tab</li>
+						<li>Tada! A complete list of all fonts used in the PSD</li>
+					</ul>
+					<div><img src="img/acrobat-fonts-list.png" /></div>
+				</div>
+			</section>
+
+			<section>
+				<h1>Font layer rules</h1>
+				<h2>Don't use more than one font<br />family / style per text layer</h2>
+
+			</section>
+			<section>
+				<h3>Don't make us go digging with the Text tool</h3>
+				<img src="img/multiple-fonts-per-layer.png" alt="">
+			</section>
+
+			<section>
+				<h3>If the font-family, font-weight or leading values are [unknown], we're going to have a problem</h3>
+				<img src="img/character-panel-empty-values.png" alt="">
+			</section>
+
+			<section>
+				<h1>Developers spend a lot of time in the character panel</h1>
+				<h2>Please help make it a pleasant stay.&nbsp;&nbsp;&nbsp;:)</h2>
+			</section>
+		</section>
+
+		<section>
+			<section>
+				<h3>Repeat after me: </h3>
+				<h1>&ldquo;There is no canvas.&rdquo;</h1>
+			</section>
+
+			<section>
+				There is a multitude of screens and configurations out there.
+				There is <strong>no</strong> specific size.
+				Unlike print, we can't know the canvas ahead of time.
+
+				Stay loose <span class="fragment">as a goose</span>
+			</section>
+
+			<section>
+				What happens to the header?
+				Do we go all 2003 and add a gradient mask at both ends and make it fade into the background?
+				Do we crop it?
+			</section>
+		</section>
+
+
+		<section>
+			<section>
+				<h1>Don't use blending mode</h1>
+
+			</section>
+
+			<section>
+				The web isn't ready for them
+				<img data-svg-src="img/caniuse-mix-blend-mode.svg" src="img/caniuse-mix-blend-mode.svg" />
+			</section>
+			<section>
+				The web isn't ready for them
+				<img data-svg-src="img/caniuse-background-blend-mode.svg" src="img/caniuse-background-blend-mode.svg" />
+			</section>
+		</section>
+
+
+		<section>
+			<section>
+				<h1>Colour me happy!</h1>
+			</section>
+
+			<section>
+				Don't use the marquee tool + Fills for rectangles
+
+				It makes it harder to grab the proper colours.
+
+				Use the shape tool instead.
+
+			</section>
+			<section>
+				Alternative: Use the Colour Overlay layer effect
+			</section>
+			<section>
+				The goal is to make the colour values easy to extract.
+
+			</section>
+			<section>
+
+				<h1>Bonus points</h1>
+
+				<ul>
+					<li>Swatches</li>
+					<li>List of colour values</li>
+				</ul>
+
+			</section>
+			<section>
+				We're going to end up declaring them as variables:
+				<section>
+				<pre><code class="scss">
+$main-colour: rgb( 204, 0, 102 );
+$link-colour: rgb( 102, 5, 51 );
+				</code></pre>
+				</section>
+			</section>
+		</section>
+
+
+		<section>
+			<h1>I was told there would be tips!</h1>
+		</section>
+
+		<section>
+			<h1>Does this look familiar?</h1>
+
+			video of chopping up individual elements (select, crop, hide others, save for web, ... revert, redo)
+		</section>
 	</div>
 </div>
 
 <script id="jquery" src="//code.jquery.com/jquery-3.0.0.min.js"></script>
 <script>window.jQuery || document.write( '<script id="jquery" src="js/jquery-3.0.0.min.js">\x3C/script>' )</script>
+
+<script id="head.js" src="js/reveal.js/lib/js/head.min.js"></script>
 
 <script id="reveal.js" src="js/reveal.js/js/reveal.js"></script>
 <script id="iso-scripts" src="js/jquery.wcott2016.js"></script>
