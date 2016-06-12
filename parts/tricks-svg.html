@@ -1,0 +1,31 @@
+SVGs
+
+SVGs can be used like images inside an &lt;img /&gt; tag or even an object tag.
+They can also be inserted directly into the document, inline.
+
+The main advantage of using the &lt;img /&gt; tag is that your source code seems lighter or easier to read.
+Do we really care? Not really.
+
+The disadvantage is that we can't target them.
+
+Did you know?
+You can actually apply CSS to SVGs?
+
+
+If your SVG is inline, you can actually target the paths and fills with CSS.
+Want to have a :hover or .active state for that logo? No problem, simply target the correct paths or fills.
+
+
+Tip:
+Want to keep your source clean and still use inline SVGs?
+You could do it through PHP with something like
+<?php include( 'svgs/my-svg-image.svg' ); ?>
+
+Want to do it with JS?
+You can simply keep an object handy along the lines of
+var AllVectors = {
+icon_bla : 'svg code to add',
+icon_other_bla : '<svg code to add'
+};
+
+and then simply use JavaScript to inject them wherever you want.

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blending modes</title>
+
+	<style>
+		.blending-modes {
+
+		}
+
+		.blending-modes .full-container {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+			background: url(img/img_1900.jpg) no-repeat center center / cover;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+
+		.blending-modes .headers {
+		}
+
+
+		.blending-modes h1 {
+			font-size: 10vw;
+			margin: 0;
+
+			color: #3b6110;
+			text-align: center;
+			opacity: 0.75;
+		}
+
+		.blend-multiply {
+			mix-blend-mode: multiply;
+		}
+
+		.blend-screen {
+			mix-blend-mode: screen;
+		}
+
+		.blend-difference {
+			mix-blend-mode: difference;
+		}
+
+	</style>
+</head>
+<body>
+<section class="blending-modes">
+	<div class="full-container ">
+		<div class="headers">
+			<h1 class="blend-opacity">Blending Modes</h1>
+			<h1 class="blend-multiply">Blending Modes</h1>
+			<h1 class="blend-screen">Blending Modes</h1>
+			<h1 class="blend-difference">Blending Modes</h1>
+		</div>
+	</div>
+</section>
+
+</body>
+</html>
