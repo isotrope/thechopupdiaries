@@ -1879,6 +1879,11 @@ body {
   text-decoration: underline;
 }
 
+.reveal section img {
+  border: none;
+  box-shadow: none;
+}
+
 .reveal .intro h1 {
   font-size: 5em;
 }
@@ -2026,33 +2031,44 @@ body {
   width: 100%;
 }
 
-.reveal .header-demo .header-demo-titles .step-2,
-.reveal .header-demo .header-demo-titles .step-3,
-.reveal .header-demo .header-demo-titles .step-4 {
+.reveal .moveable-header .header-demo-titles {
+  position: relative;
+}
+
+.reveal .moveable-header .header-demo-titles [class^="step-"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.reveal .moveable-header .header-demo-titles .step-2,
+.reveal .moveable-header .header-demo-titles .step-3,
+.reveal .moveable-header .header-demo-titles .step-4 {
   opacity: 0;
 }
 
-section.step-2 .reveal .header-demo .header-demo-titles .step-1 {
+.reveal .moveable-header.step-2 .header-demo-titles .step-1 {
   opacity: 0;
 }
 
-section.step-2 .reveal .header-demo .header-demo-titles .step-2 {
+.reveal .moveable-header.step-2 .header-demo-titles .step-2 {
   opacity: 1;
 }
 
-section.step-3 .reveal .header-demo .header-demo-titles .step-1 {
+.reveal .moveable-header.step-3 .header-demo-titles .step-1 {
   opacity: 0;
 }
 
-section.step-3 .reveal .header-demo .header-demo-titles .step-3 {
+.reveal .moveable-header.step-3 .header-demo-titles .step-3 {
   opacity: 1;
 }
 
-section.step-4 .reveal .header-demo .header-demo-titles .step-1 {
+.reveal .moveable-header.step-4 .header-demo-titles .step-1 {
   opacity: 0;
 }
 
-section.step-4 .reveal .header-demo .header-demo-titles .step-4 {
+.reveal .moveable-header.step-4 .header-demo-titles .step-4 {
   opacity: 1;
 }
 

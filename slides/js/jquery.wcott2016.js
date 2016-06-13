@@ -136,8 +136,13 @@ ISO = {
 			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
 			$( 'body' ).removeClass().addClass( 'current-col-' + event.indexh + ' current-row-' + event.indexv );
 
-			console.log( event.currentSlide );
+			console.log( event );
 
+			if ( $( event.currentslide ).hasClass( 'moveable-header' ) ) {
+				$( event.currentslide ).removeClass( 'step-2 step-3 step-4' ).addClass( 'step-1' );
+			} else if ( $( event.previousSlide ).hasClass( 'moveable-header' ) && $( event.previousSlide ).hasClass( 'past' ) ) {
+				$( event.previousSlide ).removeClass( 'step-1 step-2 step-3' ).addClass( 'step-4' );
+			}
 		} );
 
 
@@ -149,21 +154,21 @@ ISO = {
 
 			// HEADER DEMO
 			var $header = $( '.header-demo' ),
-				$section = $header.parent('section');
+				$section = $header.parent( 'section' );
 
 			if ( dataRun == 'header-demo-step-2' ) {
-				$section.removeClass('step-1 step-3 step-4').addClass('step-2');
+				$section.removeClass( 'step-1 step-3 step-4' ).addClass( 'step-2' );
 				$header.addClass( 'wider' );
 
 			} else if ( dataRun == 'header-demo-step-3' ) {
-				$section.removeClass('step-1 step-2 step-4').addClass('step-3');
+				$section.removeClass( 'step-1 step-2 step-4' ).addClass( 'step-3' );
 				$header.addClass( 'fade-sides' );
 			}
 			else if ( dataRun == 'header-demo-step-4' ) {
-				$section.removeClass('step-1 step-2 step-3').addClass('step-4');
+				$section.removeClass( 'step-1 step-2 step-3' ).addClass( 'step-4' );
 				$header.removeClass( 'fade-sides' ).addClass( 'stretched' );
 			} else {
-				$section.removeClass('step-2 step-3 step-4').addClass('step-1');
+				$section.removeClass( 'step-2 step-3 step-4' ).addClass( 'step-1' );
 				$header.removeClass( 'wider fade-sides stretched' );
 			}
 		} );

@@ -150,76 +150,72 @@ Hi!!
 		<section>
 			<section>
 				<h3>Repeat after me: </h3>
-				<h1>&ldquo;There is no canvas.&rdquo;</h1>
+				<h1>&ldquo;There are no page dimensions.&rdquo;</h1>
 			</section>
 
 			<section>
 				<h2>The web isn't a fixed size medium.</h2>
-				<h2>Unlike print, we can't know the canvas size ahead of time.</h2>
-
-				<h2>You're going to have to stay loose</h2>
+				<h2>We can't know the canvas size ahead of time.</h2>
 			</section>
 
-
 			<section>
+				<h2>&ldquo;So which dimensions should I use for the mockups?&rdquo;</h2>
+				<h1 class="fragment">&ldquo;Whichever you feel is best.&rdquo;</h1>
+			</section>
 
-			<div class="header-demo">
-				<div class="browser-chrome">
-					<input class="address-bar" type="url" value="https://ourswuperawesomesite.com" />
+			<section class="moveable-header">
 
-					<div class="buttons">
-						<button type="button"></button>
-						<button type="button"></button>
-						<button type="button"></button>
+				<div class="header-demo">
+					<div class="browser-chrome">
+						<input class="address-bar" type="url" value="https://ourswuperawesomesite.com" />
+
+						<div class="buttons">
+							<button type="button"></button>
+							<button type="button"></button>
+							<button type="button"></button>
+						</div>
 					</div>
+					<div class="header-image-container">
+						<div class="header-image-fader"></div>
+					</div>
+					<h1 class="header-title">Headers are awesome!</h1>
+					<ul class="header-menu">
+						<li>All of our headers</li>
+						<li>Need more headers?</li>
+						<li>Contact us about our headers</li>
+					</ul>
 				</div>
-				<div class="header-image-container">
-					<div class="header-image-fader"></div>
-				</div>
-				<h1 class="header-title">Headers are awesome!</h1>
-				<ul class="header-menu">
-					<li>All of our headers</li>
-					<li>Need more headers?</li>
-					<li>Contact us about our headers</li>
-				</ul>
-			</div>
-			<!-- classes for .header-demo are .wider .side-fade .stretched -->
+				<!-- classes for .header-demo are .wider .side-fade .stretched -->
 
 				<br class="fragment step-2" data-run="header-demo-step-2" />
 				<br class="fragment step-3" data-run="header-demo-step-3" />
 				<br class="fragment step-4" data-run="header-demo-step-4" />
 
-			<h2 class="header-demo-titles">
-				<span class="step-1">Yay! A nice header.</span>
-				<span class="step-2">What if the screen changes?</span>
-				<span class="step-3">Should we just leave it as it is?</span>
-				<span class="step-4">Should we go retro and add an alpha mask to fade it into the background?</span>
-			</h2>
-
-		</section>
-
-		<section>
-			What happens to the header?
-			Do we go all 2003 and add a gradient mask at both ends and make it fade into the background?
-			Do we crop it?
-		</section>
-		</section>
-
-
-		<section>
-			<section>
-				<h1>Don't use blending mode</h1>
+				<h2 class="header-demo-titles">
+					<span class="step-1">Yay! A nice header.</span>
+					<span class="step-2">What if the screen changes?</span>
+					<span class="step-3">Should we just leave it as it is?</span>
+					<span class="step-4">Should we go retro and add an alpha mask to fade it into the background?</span>
+				</h2>
 
 			</section>
 
 			<section>
-				The web isn't ready for them
-				<img data-svg-src="img/caniuse-mix-blend-mode.svg" src="img/caniuse-mix-blend-mode.svg" />
+				<h2>This is where communication kicks in!</h2>
+
+				<ul>
+					<li>Add notes in your PSD <img src="img/photoshop-note-tool.png" /><br />
+						<small>( It's with the Eye Dropper / Ruler tools )</small>
+					</li>
+
+					<li>Add a quick group of text layers<br /> for notes that can be easily hidden</li>
+
+					<li>Explain in a document that<br /> you send along with your PSDs</li>
+				</ul>
+
 			</section>
-			<section>
-				The web isn't ready for them
-				<img data-svg-src="img/caniuse-background-blend-mode.svg" src="img/caniuse-background-blend-mode.svg" />
-			</section>
+
+
 		</section>
 
 
@@ -228,24 +224,38 @@ Hi!!
 				<h1>Colour me happy!</h1>
 			</section>
 
+
 			<section>
-				Don't use the marquee tool + Fills for rectangles
+				<h1>First things first</h1>
+				<h2>One of the dev's first steps is <br /> to compile the variables</h2>
+				<p>Colours, Typography, Measures,... </p>
+			</section>
 
-				It makes it harder to grab the proper colours.
+			<section>
+				<h1>Marquee</h1>
+				<h2>(de Sade-istic tool)</h2>
+			</section>
 
-				Use the shape tool instead.
 
+			<section>
+				<h3>Try to avoid using the Marquee tool.</h3>
+				<h3>"Painting" blocks with Fills is pretty quick.</h3>
+				<h3 class="fragment">... but so is using the Shape tool!&nbsp;&nbsp;&nbsp;:)</h3>
+			</section>
+
+			<section>
+				<h2>Alternative:</h2>
+				<h1>Use the Colour Overlay<br />layer effect</h1>
 			</section>
 			<section>
-				Alternative: Use the Colour Overlay layer effect
+
+				<h1>&ldquo;What is the fastest way to get colour info into the Information panel?&rdquo;</h1>
+
+				<!--<h1>The goal is to make the colour values easy to extract.</h1>-->
 			</section>
 			<section>
-				The goal is to make the colour values easy to extract.
 
-			</section>
-			<section>
-
-				<h1>Bonus points</h1>
+				<h1>Bonus points:</h1>
 
 				<ul>
 					<li>Swatches</li>
@@ -266,13 +276,46 @@ $link-colour: rgb( 102, 5, 51 );
 
 
 		<section>
-			<h1>I was told there would be tips!</h1>
+			<section>
+				<h1>Don't use blending modes</h1>
+
+			</section>
+
+			<section>
+				The web isn't ready for them
+				<img data-svg-src="img/caniuse-mix-blend-mode.svg" src="img/caniuse-mix-blend-mode.svg" />
+			</section>
+			<section>
+				The web isn't ready for them
+				<img data-svg-src="img/caniuse-background-blend-mode.svg" src="img/caniuse-background-blend-mode.svg" />
+			</section>
+		</section>
+
+
+		<section>
+			<h1>I was told there<br /> would be tips!</h1>
 		</section>
 
 		<section>
 			<h1>Does this look familiar?</h1>
 
 			video of chopping up individual elements (select, crop, hide others, save for web, ... revert, redo)
+		</section>
+
+
+		<section>
+			<h1>Presentation deets</h1>
+
+
+			<ul>
+				<li>Fonts used:
+					<a href="https://www.google.com/fonts/specimen/Playfair+Display" style="font-family: 'Playfair Display', serif; font-weight: bolder;">Playfair Display</a> and
+					<a href="https://www.google.com/fonts/specimen/Ubuntu">Ubuntu</a></li>
+
+				<li>Presentation library: <a href="http://lab.hakim.se/reveal-js/">reveal.js</a></li>
+
+				<li>Thank you so much, WordCamp Ottawa, for having me!! <3</li>
+			</ul>
 		</section>
 	</div>
 </div>

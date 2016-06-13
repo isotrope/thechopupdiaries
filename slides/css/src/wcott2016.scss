@@ -9,6 +9,15 @@ $landscape-breakpoint: 769px;
 
 .reveal {
 
+  section img {
+	border: none;
+	box-shadow: none;
+  }
+
+
+
+
+
   .intro {
 	h1 {
 	  font-size: 5em;
@@ -211,13 +220,29 @@ $landscape-breakpoint: 769px;
 	  }
 	}
 
-	.header-demo-titles .step-2,
-	.header-demo-titles .step-3,
-	.header-demo-titles .step-4 {
-	  opacity: 0;
+  }
+  //   .header-demo
+
+  .moveable-header {
+	.header-demo-titles {
+	  position: relative;
+
+	  [class^="step-"] {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	  }
+
+
+	  .step-2,
+	  .step-3,
+	  .step-4 {
+		opacity: 0;
+	  }
 	}
 
-	section.step-2 & {
+	&.step-2 {
 	  .header-demo-titles .step-1 {
 		opacity: 0;
 	  }
@@ -226,7 +251,7 @@ $landscape-breakpoint: 769px;
 	  }
 	}
 
-	section.step-3 & {
+	&.step-3 {
 	  .header-demo-titles .step-1 {
 		opacity: 0;
 	  }
@@ -235,7 +260,7 @@ $landscape-breakpoint: 769px;
 	  }
 	}
 
-	section.step-4 & {
+	&.step-4 {
 	  .header-demo-titles .step-1 {
 		opacity: 0;
 	  }
@@ -246,6 +271,5 @@ $landscape-breakpoint: 769px;
 	}
 
   }
-  //   .header-demo
 
 }
