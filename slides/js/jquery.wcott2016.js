@@ -140,6 +140,8 @@ ISO = {
 
 			if ( $( event.currentslide ).hasClass( 'moveable-header' ) ) {
 				$( event.currentslide ).removeClass( 'step-2 step-3 step-4' ).addClass( 'step-1' );
+				_this.adjustHeaderDemo( 'header-demo-step-1' );
+				
 			} else if ( $( event.previousSlide ).hasClass( 'moveable-header' ) && $( event.previousSlide ).hasClass( 'past' ) ) {
 				$( event.previousSlide ).removeClass( 'step-1 step-2 step-3' ).addClass( 'step-4' );
 			}
@@ -152,25 +154,8 @@ ISO = {
 			console.log( event, dataRun );
 
 
-			// HEADER DEMO
-			var $header = $( '.header-demo' ),
-				$section = $header.parent( 'section' );
+			_this.adjustHeaderDemo( dataRun );
 
-			if ( dataRun == 'header-demo-step-2' ) {
-				$section.removeClass( 'step-1 step-3 step-4' ).addClass( 'step-2' );
-				$header.addClass( 'wider' );
-
-			} else if ( dataRun == 'header-demo-step-3' ) {
-				$section.removeClass( 'step-1 step-2 step-4' ).addClass( 'step-3' );
-				$header.addClass( 'fade-sides' );
-			}
-			else if ( dataRun == 'header-demo-step-4' ) {
-				$section.removeClass( 'step-1 step-2 step-3' ).addClass( 'step-4' );
-				$header.removeClass( 'fade-sides' ).addClass( 'stretched' );
-			} else {
-				$section.removeClass( 'step-2 step-3 step-4' ).addClass( 'step-1' );
-				$header.removeClass( 'wider fade-sides stretched' );
-			}
 		} );
 
 		Reveal.addEventListener( 'fragmenthidden', function ( event ) {
@@ -178,7 +163,33 @@ ISO = {
 			var dataRun = $( event.fragment ).attr( 'data-run' );
 			console.log( event, dataRun );
 
+			_this.adjustHeaderDemo( dataRun );
+
 		} );
+	},
+
+	adjustHeaderDemo : function ( dataRun ) {
+		// HEADER DEMO
+		var $header = $( '.header-demo' ),
+			$section = $header.parent( 'section' );
+
+		console.log( '[ISO.adjustHeaderDemo] dataRun = ' + dataRun );
+
+		if ( dataRun == 'header-demo-step-2' ) {
+			$section.removeClass( 'step-1 step-3 step-4' ).addClass( 'step-2' );
+			$header.removeClass( 'fade-sides' ).addClass( 'wider' );
+
+		} else if ( dataRun == 'header-demo-step-3' ) {
+			$section.removeClass( 'step-1 step-2 step-4' ).addClass( 'step-3' );
+			$header.removeClass( 'stretched' ).addClass( 'fade-sides' );
+		}
+		else if ( dataRun == 'header-demo-step-4' ) {
+			$section.removeClass( 'step-1 step-2 step-3' ).addClass( 'step-4' );
+			$header.removeClass( 'fade-sides' ).addClass( 'stretched wider' );
+		} else {
+			$section.removeClass( 'step-2 step-3 step-4' ).addClass( 'step-1' );
+			$header.removeClass( 'wider fade-sides stretched' );
+		}
 	},
 
 	injectSvgs : function () {

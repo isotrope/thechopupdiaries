@@ -14,9 +14,17 @@ $landscape-breakpoint: 769px;
 	box-shadow: none;
   }
 
+  h1 + h2 {
+	margin-top: 3rem;
+  }
 
+  .align-text-left {
+	text-align: left;
+  }
 
-
+  .align-text-right {
+	text-align: right;
+  }
 
   .intro {
 	h1 {
@@ -234,7 +242,6 @@ $landscape-breakpoint: 769px;
 		width: 100%;
 	  }
 
-
 	  .step-2,
 	  .step-3,
 	  .step-4 {
@@ -272,4 +279,62 @@ $landscape-breakpoint: 769px;
 
   }
 
+  .caniuse-screen {
+	max-height: 50%;
+  }
+
+  .code-sample {
+
+	display: inline-block;
+	width: auto;
+	margin: 0 auto;
+
+	&.code-colour-variables {
+	  font-size: 4rem;
+	  code {
+		padding: 2rem;
+	  }
+	}
+
+	&.photoshop-css {
+	  font-size: 2rem;
+
+	  code {
+		padding: 2rem;
+	  }
+	}
+  }
+
+}
+
+.footer {
+
+  display: none;
+
+  @media (min-width: $landscape-breakpoint) {
+
+	opacity: 0;
+	transition: 2000ms;
+
+
+	body[class^="current-"] & {
+
+	  display: block;
+	  position: fixed;
+	  bottom: 10px;
+	  left: 10px;
+	  opacity: 1;
+
+	  font-family: 'Playfair Display', serif;
+	  font-weight: 100;
+
+	  font-size: 10px;
+
+	  img {
+		width: 30px;
+		margin-right: 5px;
+		opacity: 0.4;
+	  }
+	}
+  }
 }
