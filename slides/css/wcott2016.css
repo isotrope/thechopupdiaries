@@ -1490,13 +1490,13 @@ body {
 
 ::-moz-selection {
   color: #fff;
-  background: #98bdef;
+  background: #194687;
   text-shadow: none;
 }
 
 ::selection {
   color: #fff;
-  background: #98bdef;
+  background: #194687;
   text-shadow: none;
 }
 
@@ -1716,20 +1716,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #2a76dd;
+  color: #050e1b;
   text-decoration: none;
   transition: color .15s ease;
 }
 
 .reveal a:hover {
-  color: #6ca0e8;
+  color: #112f5c;
   text-shadow: none;
   border: none;
 }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #1a53a1;
+  background: black;
 }
 
 /*********************************************
@@ -1753,7 +1753,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #2a76dd;
+  border-color: #050e1b;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
 }
 
@@ -1762,38 +1762,38 @@ body {
  *********************************************/
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-  border-right-color: #2a76dd;
+  border-right-color: #050e1b;
 }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #2a76dd;
+  border-left-color: #050e1b;
 }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-  border-bottom-color: #2a76dd;
+  border-bottom-color: #050e1b;
 }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-  border-top-color: #2a76dd;
+  border-top-color: #050e1b;
 }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #6ca0e8;
+  border-right-color: #112f5c;
 }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #6ca0e8;
+  border-left-color: #112f5c;
 }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #6ca0e8;
+  border-bottom-color: #112f5c;
 }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #6ca0e8;
+  border-top-color: #112f5c;
 }
 
 /*********************************************
@@ -1804,7 +1804,7 @@ body {
 }
 
 .reveal .progress span {
-  background: #2a76dd;
+  background: #050e1b;
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
 }
 
