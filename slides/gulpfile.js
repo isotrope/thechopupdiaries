@@ -1,5 +1,5 @@
 var gulp = require( 'gulp' ),
-	jshint = require('gulp-jshint'),
+	//jshint = require('gulp-jshint'),
 	notify = require( 'gulp-notify' ),
 	postCss = require( 'gulp-postcss' ),
 	postCssAutoprefixer = require( 'autoprefixer' ),
@@ -49,7 +49,7 @@ gulp.task( 'styles', function () {
 // Watch
 gulp.task( 'watch', function () {
 	// Watch .scss files
-	gulp.watch( ['css/src/*.scss', 'js/reveal.js/css/**/*.scss'], [ 'styles' ] );
+	gulp.watch( ['css/src/*.scss', 'js/reveal/css/**/*.scss'], [ 'styles' ] );
 } );
 
 

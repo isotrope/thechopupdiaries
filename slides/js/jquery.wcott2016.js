@@ -22,8 +22,11 @@ ISO = {
 			// The "normal" size of the presentation, aspect ratio will be preserved
 			// when the presentation is scaled to fit different resolutions. Can be
 			// specified using percentage units.
-			width  : 1920,
-			height : 1080,
+			//width  : 1920,
+			//height : 1080,
+
+			width  : 1600,
+			height : 900,
 
 			// Factor of the display size that should remain empty around the content
 			margin : 0.1,
@@ -109,23 +112,23 @@ ISO = {
 			dependencies : [
 				// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
 				{
-					src : 'js/reveal.js/lib/js/classList.js', condition : function () {
+					src : 'js/reveal/lib/js/classList.js', condition : function () {
 					return !document.body.classList;
 				}
 				},
 
 				// Syntax highlight for <code> elements
 				{
-					src : 'js/reveal.js/plugin/highlight/highlight.js', async : true, callback : function () {
+					src : 'js/reveal/plugin/highlight/highlight.js', async : true, callback : function () {
 					hljs.initHighlightingOnLoad();
 				}
 				},
 
 				// Zoom in and out with Alt+click
-				{ src : 'js/reveal.js/plugin/zoom-js/zoom.js', async : true },
+				{ src : 'js/reveal/plugin/zoom-js/zoom.js', async : true },
 
 				// Speaker notes
-				{ src : 'js/reveal.js/plugin/notes/notes.js', async : true },
+				{ src : 'js/reveal/plugin/notes/notes.js', async : true },
 
 			]
 
