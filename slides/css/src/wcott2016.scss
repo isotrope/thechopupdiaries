@@ -14,8 +14,29 @@ $landscape-breakpoint: 769px;
 	box-shadow: none;
   }
 
+
+  a {
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-ms-word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+  }
+
   h1 + h2 {
 	margin-top: 3rem;
+  }
+
+  h1 + h1 {
+	margin-top: 4rem;
   }
 
   .align-text-left {
@@ -24,6 +45,15 @@ $landscape-breakpoint: 769px;
 
   .align-text-right {
 	text-align: right;
+  }
+
+  .slide-background.intro,
+  .slide-background.intro .slide-background {
+	transition: none;
+  }
+
+  .intro-logo {
+	width: 50px;
   }
 
   .intro {
@@ -305,8 +335,6 @@ $landscape-breakpoint: 769px;
 	}
   }
 
-
-
 }
 
 .footer {
@@ -317,7 +345,6 @@ $landscape-breakpoint: 769px;
 
 	opacity: 0;
 	transition: 2000ms;
-
 
 	body[class^="current-"] & {
 

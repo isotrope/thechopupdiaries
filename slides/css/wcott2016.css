@@ -1884,8 +1884,25 @@ body {
   box-shadow: none;
 }
 
+.reveal a {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 .reveal h1 + h2 {
   margin-top: 3rem;
+}
+
+.reveal h1 + h1 {
+  margin-top: 4rem;
 }
 
 .reveal .align-text-left {
@@ -1894,6 +1911,15 @@ body {
 
 .reveal .align-text-right {
   text-align: right;
+}
+
+.reveal .slide-background.intro,
+.reveal .slide-background.intro .slide-background {
+  transition: none;
+}
+
+.reveal .intro-logo {
+  width: 50px;
 }
 
 .reveal .intro h1 {
