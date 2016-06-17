@@ -311,6 +311,7 @@ $landscape-breakpoint: 769px;
 
   .caniuse-screen {
 	max-height: 50%;
+	  width: 100%;
   }
 
   .code-sample {
@@ -334,6 +335,14 @@ $landscape-breakpoint: 769px;
 	  }
 	}
   }
+
+
+
+	.enter-the-generator {
+		h1 {
+			font-size: 15rem;
+		}
+	}
 
 }
 
