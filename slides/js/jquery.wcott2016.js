@@ -22,11 +22,11 @@ ISO = {
 			// The "normal" size of the presentation, aspect ratio will be preserved
 			// when the presentation is scaled to fit different resolutions. Can be
 			// specified using percentage units.
-			//width  : 1920,
-			//height : 1080,
+			width  : 1920,
+			height : 1080,
 
-			width  : 1600,
-			height : 900,
+			// width  : 1600,
+			// height : 900,
 
 			// Factor of the display size that should remain empty around the content
 			margin : 0.1,
