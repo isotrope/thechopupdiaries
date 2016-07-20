@@ -1,0 +1,38 @@
+{
+  "name": "chopupdiaries",
+  "version": "1.0.0",
+  "description": "The Chop-up Diaries (WordCamp Ottawa 2016)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isotrope/thechopupdiaries.git"
+  },
+  "keywords": [
+    "chop-up",
+    "psd",
+    "conversion",
+    "WordCamp",
+    "css"
+  ],
+  "author": "Michal Bluma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isotrope/thechopupdiaries/issues"
+  },
+  "homepage": "https://github.com/isotrope/thechopupdiaries#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "css-mqpacker": "^5.0.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3"
+  }
+}
