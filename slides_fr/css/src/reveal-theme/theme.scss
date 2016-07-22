@@ -130,12 +130,13 @@ body {
 
 .reveal q,
 .reveal blockquote {
-	quotes: none;
+	//quotes: none;
 }
 
 .reveal blockquote {
 	display: block;
 	position: relative;
+  font-family: ;
 	width: 70%;
 	margin: $blockMargin auto;
 	padding: 5px;

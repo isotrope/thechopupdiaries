@@ -101,6 +101,31 @@ $landscape-breakpoint: 769px;
 	margin-top: 6rem;
   }
 
+  blockquote {
+	border: none;
+	box-shadow: none;
+	text-align: left;
+	font-family: $headingFont;
+
+
+	footer {
+	  text-align: right;
+	  font-family: $mainFont;
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
   $header-demo-transition-duration: 2000ms;
 
   .header-demo {
